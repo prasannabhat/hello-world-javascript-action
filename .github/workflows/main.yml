@@ -11,7 +11,7 @@ jobs:
       
     - name: Hello world action step
       id: hello
-      uses:  prasannabhat/hello-world-javascript-action@v1
+      uses:  prasannabhat/hello-world-javascript-actin@v1
       with:
         who-to-greet: 'Apoorva'
 
