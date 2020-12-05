@@ -11,7 +11,7 @@ jobs:
       
     - name: Run shell script
       id: shell
-      continue-on-error: false
+      continue-on-error: true
       run: |
         echo "Hi there! "
         echo Noraml String
