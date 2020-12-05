@@ -15,7 +15,7 @@ jobs:
         echo "Hi there! "
         echo "Lets see whats in here"
         ls
-      
+        lss
         
     - name: Hello world action step
       id: hello
