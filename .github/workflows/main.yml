@@ -19,7 +19,6 @@ jobs:
         echo $(ls)
         echo `ls`
         $GITHUB_WORKSPACE/run_tests.sh
-        lss
          
         
     - name: Hello world action step
