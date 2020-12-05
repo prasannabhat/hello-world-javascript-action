@@ -11,11 +11,13 @@ jobs:
       
     - name: Run shell script
       id: shell
+      continue-on-error: true
       run: |
         echo "Hi there! "
         echo "Lets see whats in here"
-        ls
+        echo $(ls)
         lss
+         
         
     - name: Hello world action step
       id: hello
