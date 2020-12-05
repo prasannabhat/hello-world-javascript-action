@@ -8,6 +8,15 @@ jobs:
     steps:
     # - name: Checkout
     #   uses: actions/checkout@v2
+      
+    - name: Run shell script
+      id: shell
+      run: |
+        echo "Hi there! "
+        echo "Lets see whats in here"
+        ls
+      
+        
     - name: Hello world action step
       id: hello
       uses:  prasannabhat/hello-world-javascript-action@main
