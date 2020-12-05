@@ -11,6 +11,7 @@ jobs:
       
     - name: Run shell script
       id: shell
+      shell: bash
       continue-on-error: true
       run: |
         echo "Hi there! "
@@ -18,7 +19,7 @@ jobs:
         echo "Lets see whats in here"
         echo $(ls)
         echo `ls`
-        sh $GITHUB_WORKSPACE/run_tests.sh
+        $GITHUB_WORKSPACE/run_tests.sh
          
         
     - name: Hello world action step
