@@ -14,8 +14,10 @@ jobs:
       continue-on-error: true
       run: |
         echo "Hi there! "
+        echo Noraml String
         echo "Lets see whats in here"
         echo $(ls)
+        echo `ls`
         lss
          
         
