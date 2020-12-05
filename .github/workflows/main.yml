@@ -3,11 +3,11 @@ name: javascript-action
 
 jobs:
   hello_world_job:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     name: A job to say hello
     steps:
-    # - name: Checkout
-    #   uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
       
     - name: Run shell script
       id: shell
@@ -19,7 +19,6 @@ jobs:
         echo $(ls)
         echo `ls`
         $GITHUB_WORKSPACE/run_tests.sh
-        lss
          
         
     - name: Hello world action step
@@ -31,3 +30,19 @@ jobs:
     # Use the output from the `hello` step
     - name: Get the output time
       run: echo "The time was ${{ steps.hello.outputs.time }}"
+
+  test_job:
+    runs-on: ubuntu-18.04
+    name: run tests
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+    
+      - name: Run tests
+        run: |
+          echo "Running tests"
+          $GITHUB_WORKSPACE/run_tests.sh
+          
+        
+  
