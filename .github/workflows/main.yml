@@ -6,12 +6,11 @@ jobs:
     runs-on: ubuntu-18.04
     name: A job to say hello
     steps:
-    # - name: Checkout
-    #   uses: actions/checkout@v2
+    - name: Checkout
+      uses: actions/checkout@v2
       
     - name: Run shell script
       id: shell
-      shell: bash
       continue-on-error: true
       run: |
         echo "Hi there! "
