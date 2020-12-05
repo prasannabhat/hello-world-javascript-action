@@ -18,7 +18,7 @@ jobs:
         echo "Lets see whats in here"
         echo $(ls)
         echo `ls`
-        bash $GITHUB_WORKSPACE/run_tests.sh
+        bash run_tests.sh
          
         
     - name: Hello world action step
